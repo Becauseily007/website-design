@@ -4,55 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ css</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styletext.css">
     <link rel="stylesheet" href="style.css">
     <style>
         h1 {
             color:blue; /* เปลี่ยนสีหัวเรื่องใหญ่เป็นสีน้ำเงิน */
             font-size: 48pt ;
         }
-        div.myid{
-            color:white;
-            background-color: red;
-            display: block;
+        body{
+            font-size: 30px;
         }
-        p.myp {
-            color:blue;
-            font-size: 16pt;
-           
+        div{
+            font-size: 1.5em;
+            background-color:greenyellow;
         }
-        h2{
-            color:darkgreen;
-            font-size: 400pt;
-        }
-        
-           
-        
-        #myID{ /* 100 */
-            font-size: 8pt;
-        }
-        .myclass{ /* 10 */
-            font-size: 50pt;
-        }
-        div p { /* 2 */
-            font-size: 300pt;
-        }
-        p.myclass{ /* 101 */
-            font-size: 10pt;
-            color:black;
-        }
-        p { /* 1 */
-            color:rgb(0, 255, 128);
-            font-size: 16pt;
-        }
+
 
     </style>
 </head>
 <body>
-    <h1>ตัวอย่าง 1-1 โครงสร้างพื้นฐานของ css</h1>
-    <div class="myid">
+    <span style="font-size: 1rem;">กำหนดค่าขนาดตัวอักษร 1rem</span>
+    <span style="font-size: 16px;">กำหนดค่าขนาดตัวอักษร 16px</span>
+    <span style="font-size: 2rem;">ตัวอักษรนี้มีขนาด 2rem</span>
+    <h2 id="myID"> ตัวอย่าง 1-1 โครงสร้างพื้นฐานของ css</h2>
+    <div>
+         ตัวอักษร 1em
+         <span style="font-size: 45px;">ตัวอักษรนี้มีขนาด 45</span>
+         <div>
+            ตัวอักษรที่เป็นลูกของ div
+            <span style="font-size: 67.5px;">ตัวอักษรนี้มีขนาด 67.5px</span>
+            <div>
+                ตัวอักษรที่เป็นลูกของ div
+            </div>
+
+         
         <p class="myclass">Lorem ipsum dolor sit amet <span style="background-color:black;">adipisicing</span> elit. Qui explicabo dignissimos enim fugiat, quaerat, asperiores laborum accusamus reiciendis quod saepe aspernatur. Sapiente delectus tenetur commodi. Corrupti tenetur placeat soluta saepe?</p>
     </div>
+    <div>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, non nihil. Laudantium error ut fuga rem, nisi numquam voluptates. Sed optio in ipsam eos! Officiis error quam aliquid animi aliquam!</p>
         <h2 style="font-size: 48pt;">การใช้งาน External style</h2>
+    </div>
+    <h3> h3 ข้อความ Tag h3</h3>
 </body>
+    
 </html>
